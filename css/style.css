@@ -1,0 +1,112 @@
+html {
+
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-height: 100vh;
+	background: linear-gradient(135deg, #7c1599 0%,#921099 48%,#7e4ae8 100%);
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper {
+	margin: 10px;
+}
+.player {
+	max-width: 700px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	border: 5px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+.video-content {
+	width: 100%;
+}
+.controls {
+	width: 100%;
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	position: absolute;
+	bottom: 0;
+	transform: translateY(25px);
+	transition: All 0.2s cubic-bezier(0.61,-0.19, 0.7,-0.11); 
+}
+.player:hover .controls{
+	transform: translateY(0%);
+}
+.progress-bar-div {
+	display: flex;
+	flex: 100%;
+	height: 3px;
+	background-color: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: height 0.2s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+
+}
+.progress-bar-div:hover {
+	height: 5px;
+}
+.progress-bar-div-filled {
+	display: flex;
+	background-color: #bb0000;
+	flex-basis: 0%;
+}
+.pp-button-div {
+	display: flex;
+	flex: 1;
+	justify-content: flex-start;
+	flex-basis: 5%;
+}
+button {
+	background:none;
+	border:0;
+	line-height:1;
+	color:white;
+	text-align: center;
+	outline:none;
+	padding: 0;
+	cursor:pointer;
+	/*max-width:50px;*/
+}
+.pp-button {
+	padding-left: 10px;
+
+}
+.volume-bar-div {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	flex-basis: 60%;
+	padding-right: 10px;
+}
+.skip-buttons {
+	display: flex;
+	flex: 1;
+	flex-basis: 15%;
+	justify-content: space-around;
+}
+/*.full-screen-button-div {
+	display: flex;
+	flex: 1;
+	flex-basis: 10%;
+	justify-content: flex-end;
+	padding-right: 5px;
+}*/
+/*.fa-arrows-alt {
+	color: white;
+}*/
+/*.full-screen {
+	height: 100vh;
+	width: 100vw;
+}*/
